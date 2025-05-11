@@ -21,4 +21,13 @@ A simple and elegant Flutter application for managing tasks and notes, built usi
 ## 🔧 Architecture
 
 This app follows a layered architecture using BLoC pattern:
-
+## Folder Structure
+lib/
+├── blocs/
+│ ├── note/
+│ ├── task/
+├── repositorie/
+├── Models/
+│ ├── /screens
+│ └── utils/
+└── main.dart

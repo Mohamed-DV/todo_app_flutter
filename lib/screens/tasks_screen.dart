@@ -92,6 +92,14 @@ class CardTask extends StatelessWidget {
             onChanged: (_) {
               final updatedTask = task..isCompleted = !task.isCompleted;
               context.read<TaskBloc>().add(UpdateTask(updatedTask));
+                if (updatedTask.isCompleted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Task marked as completed'),
+          duration: Duration(seconds: 2),
+        ),
+      );
+    }
             },
           ),
           Text(task.title),
@@ -186,5 +194,13 @@ void _showEditModal(BuildContext context, Task task) {
         ),
       );
     },
+  );
+}
+void _showCompletionSnackbar(BuildContext context) {
+  ScaffoldMessenger.of(context).showSnackBar(
+    const SnackBar(
+      content: Text('Task marked as completed'),
+      duration: Duration(seconds: 2),
+    ),
   );
 }
