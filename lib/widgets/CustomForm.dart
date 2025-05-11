@@ -16,7 +16,7 @@ class CustomForm extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
            Text(
-          'Add New Element',
+          'Add New Task',
           style: Theme.of(context).textTheme.titleMedium,
         ),
         const SizedBox(height: 16),
