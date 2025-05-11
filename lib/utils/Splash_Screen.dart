@@ -59,8 +59,8 @@ class _SplashScreenState extends State<SplashScreen> {
                          style: GoogleFonts.balooChettan2(
           color: Colors.white,
           fontWeight: FontWeight.w500,
-          letterSpacing: .5,
-          fontSize: 40,
+          letterSpacing: .2,
+          fontSize: 25,
         ),
                     ),
                      SizedBox(height: 24),
@@ -69,8 +69,8 @@ class _SplashScreenState extends State<SplashScreen> {
                                  style: GoogleFonts.balooChettan2(
           color: Colors.white,
           fontWeight: FontWeight.w500,
-          letterSpacing: .5,
-          fontSize: 40,
+          letterSpacing: .2,
+          fontSize: 25,
         ),
                     ),
                   ],
