@@ -42,8 +42,8 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
         color: Color(0xFFD57D47),
         height: 70,
         items: const <Widget>[
-          Icon(Icons.home, size: 30, color: Colors.white),
-          Icon(Icons.headset, size: 30, color: Colors.white),
+          Icon(Icons.task, size: 30, color: Colors.white),
+          Icon(Icons.note, size: 30, color: Colors.white),
          
         ],
         onTap: (index) {
