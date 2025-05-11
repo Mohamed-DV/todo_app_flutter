@@ -111,7 +111,14 @@ class CardTask extends StatelessWidget {
     }
             },
           ),
-          Text(task.title),
+          Text(task.title,
+           style:  GoogleFonts.poppins(
+          color: Colors.black,
+          fontWeight: FontWeight.w500,
+          letterSpacing: .5,
+          fontSize: 20,
+        ),
+          ),
           Row(
             children: [
               IconButton(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:todo_app_flutter/utils/Bottom_bar.dart';
 class SplashScreen extends StatefulWidget {
   @override
@@ -38,35 +39,39 @@ class _SplashScreenState extends State<SplashScreen> {
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
                   'Tdo',
-                  style: TextStyle(
-                    fontFamily: 'Comfortaa',
-                    fontWeight: FontWeight.bold,
-                    fontSize: 30,
-                    color: Colors.black,
-                  ),
+                  style: GoogleFonts.comfortaa(
+          color: Colors.black,
+          fontWeight: FontWeight.w500,
+          letterSpacing: .5,
+          fontSize: 20,
+        ),
                 ),
               ),
               const Spacer(flex: 2),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 36.0),
+                padding:  EdgeInsets.symmetric(horizontal: 36.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       'Life is\ngetting mess',
-                      style: TextStyle(
-                        fontSize: 41,
-                        color: Colors.white,
-                        height: 1.05,
-                      ),
+                      
+                         style: GoogleFonts.balooChettan2(
+          color: Colors.white,
+          fontWeight: FontWeight.w500,
+          letterSpacing: .5,
+          fontSize: 20,
+        ),
                     ),
-                    const SizedBox(height: 24),
+                     SizedBox(height: 24),
                     Text(
                       'Organize tasks, set deadlines, and stay productive. Prioritize, get reminders, and check off completed items—all in one simple tool.',
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
-                      ),
+                                 style: GoogleFonts.balooChettan2(
+          color: Colors.white,
+          fontWeight: FontWeight.w500,
+          letterSpacing: .5,
+          fontSize: 20,
+        ),
                     ),
                   ],
                 ),

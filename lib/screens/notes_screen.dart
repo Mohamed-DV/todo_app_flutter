@@ -81,6 +81,12 @@ class NoteTask extends StatelessWidget {
             note.content,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
+              style: GoogleFonts.poppins(
+          color: Colors.black,
+          fontWeight: FontWeight.w500,
+          letterSpacing: .5,
+          fontSize: 20,
+        ),
           ),
         ],
       ),
@@ -110,10 +116,12 @@ class NoteTask extends StatelessWidget {
         Expanded(
           child: Text(
             note.title,
-            style: const TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
+             style: GoogleFonts.poppins(
+          color: Colors.black,
+          fontWeight: FontWeight.w500,
+          letterSpacing: .5,
+          fontSize: 30,
+        ),
             overflow: TextOverflow.ellipsis,
           ),
         ),
