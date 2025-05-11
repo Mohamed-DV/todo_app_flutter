@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../blocs/task/task_bloc.dart';
 import '../blocs/task/task_event.dart';
 import '../blocs/task/task_state.dart';
@@ -17,7 +18,15 @@ class TasksScreenState extends State<TasksScreen> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: const Text('Tasks'),
+        title: Text(
+          'Tasks',
+          style:  GoogleFonts.poppins(
+          color: Colors.black,
+          fontWeight: FontWeight.w500,
+          letterSpacing: .5,
+          fontSize: 20,
+        ),
+        ),
         centerTitle: true,
         automaticallyImplyLeading: false,
       ),

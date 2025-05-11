@@ -37,7 +37,7 @@ class NotesScreen extends StatelessWidget {
           color: Colors.black,
           fontWeight: FontWeight.w500,
           letterSpacing: .5,
-          fontSize: 14,
+          fontSize: 20,
         ),
       ),
       centerTitle: true,
